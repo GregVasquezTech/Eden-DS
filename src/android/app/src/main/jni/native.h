@@ -5,6 +5,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include <android/native_window_jni.h>
+#include <mutex>
 #include "common/android/applets/software_keyboard.h"
 #include "core/core.h"
 #include "core/file_sys/registered_cache.h"
@@ -38,6 +39,9 @@ public:
                              const std::string& file_redirect_dir);
 
     bool IsRunning() const;
+
+
+    [[nodiscard]] std::unique_lock<std::mutex> LockSystemAccess() const;
     bool IsPaused() const;
     void PauseEmulation();
     void UnPauseEmulation();

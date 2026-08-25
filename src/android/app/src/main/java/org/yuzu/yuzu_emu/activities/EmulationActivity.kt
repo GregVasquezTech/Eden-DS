@@ -23,6 +23,7 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
+import android.hardware.display.DisplayManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -36,6 +37,7 @@ import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.Surface
 import android.view.View
+import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -45,6 +47,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.fragment.NavHostFragment
 import androidx.preference.PreferenceManager
+import org.yuzu.yuzu_emu.BuildConfig
 import org.yuzu.yuzu_emu.NativeLibrary
 import org.yuzu.yuzu_emu.R
 import org.yuzu.yuzu_emu.YuzuApplication
@@ -69,7 +72,8 @@ import kotlin.math.roundToInt
 import org.yuzu.yuzu_emu.utils.ForegroundService
 import androidx.core.os.BundleCompat
 
-class EmulationActivity : AppCompatActivity(), SensorEventListener, InputManager.InputDeviceListener {
+class EmulationActivity : AppCompatActivity(), SensorEventListener,
+    InputManager.InputDeviceListener, DisplayManager.DisplayListener {
     private lateinit var binding: ActivityEmulationBinding
 
     var isActivityRecreated = false
@@ -99,6 +103,10 @@ class EmulationActivity : AppCompatActivity(), SensorEventListener, InputManager
     private var romSwapThreadStopped = false
     private var romSwapGeneration = 0
     private var hasEmulationSession = processHasEmulationSession
+    private var dualScreenPresentation: DualScreenPresentation? = null
+    private var dualScreenDisplayManager: DisplayManager? = null
+    private var dualScreenDisplayId: Int? = null
+    private var dualScreenLifecycleEnded = false
     private val romSwapStopTimeoutRunnable = Runnable { onRomSwapStopTimeout() }
 
     private fun onRomSwapStopTimeout() {
@@ -156,6 +164,7 @@ class EmulationActivity : AppCompatActivity(), SensorEventListener, InputManager
 
         binding = ActivityEmulationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initializeDualScreenPresentation()
 
         val launchIntent = Intent(intent)
         val shouldDeferLaunchForSwap = hasEmulationSession && isSwapIntent(launchIntent)
@@ -260,11 +269,115 @@ class EmulationActivity : AppCompatActivity(), SensorEventListener, InputManager
     }
 
     override fun onDestroy() {
+        dualScreenLifecycleEnded = true
         mainHandler.removeCallbacks(romSwapStopTimeoutRunnable)
+        runCatching { dualScreenDisplayManager?.unregisterDisplayListener(this) }
+        dualScreenDisplayManager = null
+        runCatching { dualScreenPresentation?.dismiss() }
+        dualScreenPresentation = null
+        dualScreenDisplayId = null
         super.onDestroy()
         inputManager.unregisterInputDeviceListener(this)
         stopForegroundService(this)
         NativeLibrary.playTimeManagerStop()
+    }
+
+    private fun initializeDualScreenPresentation() {
+        if (BuildConfig.FLAVOR != "dualscreen" || dualScreenLifecycleEnded ||
+            isFinishing || isDestroyed
+        ) {
+            return
+        }
+
+        val displayManager = dualScreenDisplayManager ?: (getSystemService(DISPLAY_SERVICE) as DisplayManager).also {
+            dualScreenDisplayManager = it
+            it.registerDisplayListener(this, mainHandler)
+        }
+        val currentDisplayId = dualScreenDisplayId
+        if (dualScreenPresentation?.isShowing == true && currentDisplayId != null &&
+            displayManager.getDisplay(currentDisplayId)?.isValid == true
+        ) {
+            return
+        }
+        runCatching { dualScreenPresentation?.dismiss() }
+        dualScreenPresentation = null
+        dualScreenDisplayId = null
+        val primaryDisplayId = display?.displayId
+        val secondaryDisplay = displayManager
+            .getDisplays(DisplayManager.DISPLAY_CATEGORY_PRESENTATION)
+            .firstOrNull { it.isValid && it.displayId != primaryDisplayId }
+
+        if (secondaryDisplay == null) {
+            Log.warning("[DualScreen] No Android presentation display found; using primary only")
+            return
+        }
+
+        val presentation = DualScreenPresentation(
+            owner = this,
+            display = secondaryDisplay
+        )
+        presentation.setOnDismissListener {
+            if (dualScreenPresentation === presentation) {
+                dualScreenPresentation = null
+                dualScreenDisplayId = null
+                mainHandler.post {
+                    if (!dualScreenLifecycleEnded && dualScreenPresentation == null &&
+                        !isFinishing && !isDestroyed
+                    ) {
+                        initializeDualScreenPresentation()
+                    }
+                }
+            }
+        }
+        try {
+            dualScreenPresentation = presentation
+            dualScreenDisplayId = secondaryDisplay.displayId
+            presentation.show()
+            Log.info("[DualScreen] Opened lower display ${secondaryDisplay.displayId}")
+        } catch (exception: WindowManager.InvalidDisplayException) {
+            if (dualScreenPresentation === presentation) {
+                dualScreenPresentation = null
+                dualScreenDisplayId = null
+            }
+            Log.error("[DualScreen] Failed to open lower display: ${exception.message}")
+        }
+    }
+
+    override fun onDisplayAdded(displayId: Int) {
+        if (!dualScreenLifecycleEnded && dualScreenPresentation == null &&
+            !isFinishing && !isDestroyed
+        ) {
+            initializeDualScreenPresentation()
+        }
+    }
+
+    override fun onDisplayRemoved(displayId: Int) {
+        if (displayId != dualScreenDisplayId) return
+        runCatching { dualScreenPresentation?.dismiss() }
+        dualScreenPresentation = null
+        dualScreenDisplayId = null
+        if (!dualScreenLifecycleEnded && !isFinishing && !isDestroyed) {
+            mainHandler.post {
+                if (!dualScreenLifecycleEnded && !isFinishing && !isDestroyed) {
+                    initializeDualScreenPresentation()
+                }
+            }
+        }
+    }
+
+    override fun onDisplayChanged(displayId: Int) {
+        if (displayId == dualScreenDisplayId &&
+            dualScreenDisplayManager?.getDisplay(displayId)?.isValid != true
+        ) {
+            runCatching { dualScreenPresentation?.dismiss() }
+            dualScreenPresentation = null
+            dualScreenDisplayId = null
+        }
+        if (!dualScreenLifecycleEnded && dualScreenPresentation == null &&
+            !isFinishing && !isDestroyed
+        ) {
+            initializeDualScreenPresentation()
+        }
     }
 
     override fun onUserLeaveHint() {

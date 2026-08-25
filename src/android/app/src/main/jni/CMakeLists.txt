@@ -5,6 +5,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 add_library(yuzu-android SHARED
+    botw_companion.cpp
+    botw_companion.h
+    mk8d_companion.cpp
+    mk8d_companion.h
     emu_window/emu_window.cpp
     emu_window/emu_window.h
     native.cpp

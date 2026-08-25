@@ -256,6 +256,9 @@ option(YUZU_DOWNLOAD_ANDROID_VVL "Download validation layer binary for android" 
 
 option(YUZU_LEGACY "Apply patches that improve compatibility with older GPUs (e.g. Snapdragon 865) at the cost of performance" OFF)
 
+option(BOTW_DUALSCREEN_COMPANION
+       "Enable the exact-build BOTW dual-screen companion integration" OFF)
+
 option(NIGHTLY_BUILD "Use Nightly qualifiers in the update checker and build metadata" OFF)
 
 cmake_dependent_option(YUZU_ROOM "Enable dedicated room functionality" ON "NOT ANDROID" OFF)

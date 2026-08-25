@@ -40,6 +40,10 @@ android {
 
     val isNightly =
         providers.gradleProperty("nightly").orNull?.toBooleanStrictOrNull() ?: false
+    val botwPlayerPipelineMode = providers.gradleProperty("botwPlayerPipelineMode").orNull
+        ?.toIntOrNull()?.coerceIn(0, 3) ?: 3
+    val botwSnapshotPollMode = providers.gradleProperty("botwSnapshotPollMode").orNull
+        ?.toIntOrNull()?.coerceIn(0, 2) ?: 2
 
     buildFeatures {
         viewBinding = true
@@ -69,6 +73,9 @@ android {
         targetSdk = 36
         versionName = getGitVersion()
         versionCode = autoVersion
+        buildConfigField("int", "BOTW_PLAYER_PIPELINE_MODE", "$botwPlayerPipelineMode")
+        buildConfigField("int", "BOTW_SNAPSHOT_POLL_MODE", "$botwSnapshotPollMode")
+        buildConfigField("boolean", "BOTW_DUALSCREEN_ENABLED", "true")
 
         externalNativeBuild {
             cmake {
@@ -155,17 +162,19 @@ android {
         register("relWithDebInfo") {
             isDefault = true
             signingConfig = signingConfigs.getByName("default")
-            isDebuggable = true
+            isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
 
-            manifestPlaceholders += mapOf("appNameSuffix" to " Debug Release")
+            manifestPlaceholders += mapOf("appNameSuffix" to " Optimized")
 
-            versionNameSuffix = "-relWithDebInfo"
-            applicationIdSuffix = ".relWithDebInfo"
-            isJniDebuggable = true
+            versionNameSuffix = "-optimized"
+
+
+            applicationIdSuffix = ".debug"
+            isJniDebuggable = false
         }
 
         // Signed by debug key disallowing distribution on Play Store.
@@ -192,6 +201,25 @@ android {
 
             manifestPlaceholders += mapOf("appNameBase" to "Eden")
             resValue("string", "app_name_suffixed", "Eden")
+
+            ndk {
+                abiFilters += listOf("arm64-v8a")
+            }
+        }
+
+        create("dualscreen") {
+            dimension = "version"
+            minSdk = 33
+            applicationId = "dev.eden.eden_emulator.dualscreen"
+            manifestPlaceholders += mapOf("appNameBase" to "Eden DualScreen")
+            resValue("string", "app_name_suffixed", "Eden DualScreen")
+
+            externalNativeBuild {
+                cmake {
+                    arguments.add("-DBOTW_DUALSCREEN_COMPANION=ON")
+                }
+            }
+            buildConfigField("boolean", "BOTW_DUALSCREEN_ENABLED", "true")
 
             ndk {
                 abiFilters += listOf("arm64-v8a")
@@ -324,6 +352,10 @@ play {
 }
 
 dependencies {
+
+
+    implementation("com.google.android.filament:filament-android:1.75.0")
+    implementation("com.google.android.filament:gltfio-android:1.75.0")
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.recyclerview:recyclerview:1.4.0")

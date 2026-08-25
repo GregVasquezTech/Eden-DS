@@ -90,6 +90,8 @@ extern "C" {
 #include "hid_core/hid_core.h"
 #include "hid_core/hid_types.h"
 #include "input_common/drivers/virtual_amiibo.h"
+#include "jni/botw_companion.h"
+#include "jni/mk8d_companion.h"
 #include "jni/native.h"
 #include "video_core/frame_gen/lossless_dll.h"
 #include "video_core/renderer_base.h"
@@ -192,6 +194,10 @@ void EmulationSession::InitializeGpuDriver(const std::string& hook_lib_dir,
 
 bool EmulationSession::IsRunning() const {
     return m_is_running;
+}
+
+std::unique_lock<std::mutex> EmulationSession::LockSystemAccess() const {
+    return std::unique_lock<std::mutex>{m_mutex};
 }
 
 bool EmulationSession::IsPaused() const {
@@ -693,6 +699,47 @@ jint InitFFmpegOnLoad(JavaVM* vm) {
 }
 
 extern "C" {
+
+jstring Java_org_yuzu_yuzu_1emu_NativeLibrary_getBotwCompanionSnapshot(JNIEnv* env,
+                                                                        jobject instance) {
+    const std::string snapshot =
+        BotwCompanion::GetSnapshot(EmulationSession::GetInstance());
+    return env->NewStringUTF(snapshot.c_str());
+}
+
+jstring Java_org_yuzu_yuzu_1emu_NativeLibrary_getBotwCompanionStatsSnapshot(JNIEnv* env,
+                                                                             jobject instance) {
+    const std::string snapshot =
+        BotwCompanion::GetSnapshot(EmulationSession::GetInstance(), true);
+    return env->NewStringUTF(snapshot.c_str());
+}
+
+jboolean Java_org_yuzu_yuzu_1emu_NativeLibrary_performBotwCompanionAction(
+    JNIEnv* env, jobject instance, jint action, jlong argument) {
+    return BotwCompanion::PerformAction(EmulationSession::GetInstance(), action, argument)
+               ? JNI_TRUE
+               : JNI_FALSE;
+}
+
+jint Java_org_yuzu_yuzu_1emu_NativeLibrary_fillMk8dCompanionSnapshot(
+    JNIEnv* env, jobject instance, jobject output) {
+    if (!output) {
+        return -1;
+    }
+    void* address = env->GetDirectBufferAddress(output);
+    const jlong capacity = env->GetDirectBufferCapacity(output);
+    if (!address || capacity <= 0) {
+        return -1;
+    }
+    return Mk8dCompanion::FillSnapshot(EmulationSession::GetInstance(), address,
+                                       static_cast<std::size_t>(capacity));
+}
+
+jboolean Java_org_yuzu_yuzu_1emu_NativeLibrary_activateMk8dItemSlot(
+    JNIEnv* env, jobject instance, jint slot) {
+    return Mk8dCompanion::ActivateItemSlot(EmulationSession::GetInstance(), slot) ? JNI_TRUE
+                                                                                  : JNI_FALSE;
+}
 
 void Java_org_yuzu_yuzu_1emu_NativeLibrary_surfaceChanged(JNIEnv* env, jobject instance,
                                                           [[maybe_unused]] jobject surf) {
@@ -1363,7 +1410,15 @@ jlong Java_org_yuzu_yuzu_1emu_NativeLibrary_playTimeManagerGetPlayTime(JNIEnv* e
 
 jlong Java_org_yuzu_yuzu_1emu_NativeLibrary_playTimeManagerGetCurrentTitleId(JNIEnv* env,
                                                                              jobject obj) {
-    return EmulationSession::GetInstance().System().GetApplicationProcessProgramID();
+    auto& session = EmulationSession::GetInstance();
+
+
+
+    [[maybe_unused]] auto system_access = session.LockSystemAccess();
+    if (!session.IsRunning()) {
+        return 0;
+    }
+    return session.System().GetApplicationProcessProgramID();
 }
 
 void Java_org_yuzu_yuzu_1emu_NativeLibrary_playTimeManagerResetProgramPlayTime(JNIEnv* env, jobject obj,

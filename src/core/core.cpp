@@ -292,7 +292,18 @@ struct System::Impl {
         return SystemResultStatus::Success;
     }
 
+    void ResetApplicationProcessMetadata() {
+
+
+        companion_mailbox.store(0, std::memory_order_release);
+        main_module_base.store(0, std::memory_order_release);
+        main_module_size.store(0, std::memory_order_release);
+        std::scoped_lock lock{application_module_metadata_mutex};
+        build_id.fill(0);
+    }
+
     SystemResultStatus Load(System& system, Frontend::EmuWindow& emu_window, const std::string& filepath, Service::AM::FrontendAppletParameters& params) {
+        ResetApplicationProcessMetadata();
         InitializeKernel(system);
 
         const auto file = GetGameFileFromPath(virtual_filesystem, filepath);
@@ -386,6 +397,7 @@ struct System::Impl {
 
     void ShutdownMainProcess() {
         SetShuttingDown(true);
+        ResetApplicationProcessMetadata();
         Common::ADPF::Shutdown();
 
         // Reset per-game flags
@@ -486,7 +498,11 @@ struct System::Impl {
     std::vector<std::vector<u8>> general_channel;
 
     std::array<u64, Core::Hardware::NUM_CPU_CORES> dynarmic_ticks{};
+    mutable std::mutex application_module_metadata_mutex;
     std::array<u8, 0x20> build_id{};
+    std::atomic<u64> main_module_base{};
+    std::atomic<u64> main_module_size{};
+    std::atomic<u64> companion_mailbox{};
 
     /// Service manager
     std::shared_ptr<Service::SM::ServiceManager> service_manager;
@@ -851,11 +867,32 @@ bool System::GetExitRequested() const {
 }
 
 void System::SetApplicationProcessBuildID(const CurrentBuildProcessID& id) {
+    std::scoped_lock lock{impl->application_module_metadata_mutex};
     impl->build_id = id;
 }
 
-const System::CurrentBuildProcessID& System::GetApplicationProcessBuildID() const {
+System::CurrentBuildProcessID System::GetApplicationProcessBuildID() const {
+    std::scoped_lock lock{impl->application_module_metadata_mutex};
     return impl->build_id;
+}
+
+void System::SetApplicationProcessMainModule(u64 base, u64 size) {
+    impl->main_module_size.store(size, std::memory_order_release);
+    impl->main_module_base.store(base, std::memory_order_release);
+}
+
+std::pair<u64, u64> System::GetApplicationProcessMainModule() const {
+    const u64 base = impl->main_module_base.load(std::memory_order_acquire);
+    const u64 size = impl->main_module_size.load(std::memory_order_acquire);
+    return {base, size};
+}
+
+void System::SetApplicationProcessCompanionMailbox(u64 address) {
+    impl->companion_mailbox.store(address, std::memory_order_release);
+}
+
+u64 System::GetApplicationProcessCompanionMailbox() const {
+    return impl->companion_mailbox.load(std::memory_order_acquire);
 }
 
 Service::SM::ServiceManager& System::ServiceManager() {

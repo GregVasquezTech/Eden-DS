@@ -17,6 +17,7 @@ import androidx.annotation.Keep
 import androidx.core.net.toUri
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.lang.ref.WeakReference
+import java.nio.ByteBuffer
 import org.yuzu.yuzu_emu.activities.EmulationActivity
 import org.yuzu.yuzu_emu.fragments.CoreErrorDialogFragment
 import org.yuzu.yuzu_emu.utils.DocumentsTree
@@ -164,6 +165,18 @@ object NativeLibrary {
     external fun surfaceChanged(surf: Surface?)
 
     external fun surfaceDestroyed()
+
+    external fun getBotwCompanionSnapshot(): String
+
+    external fun getBotwCompanionStatsSnapshot(): String
+
+    external fun performBotwCompanionAction(action: Int, argument: Long): Boolean
+
+
+    external fun fillMk8dCompanionSnapshot(output: ByteBuffer): Int
+
+
+    external fun activateMk8dItemSlot(slot: Int): Boolean
 
     external fun getAppletCaptureBuffer(): ByteArray
     external fun getAppletCaptureWidth(): Int

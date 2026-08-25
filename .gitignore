@@ -63,3 +63,10 @@ artifacts
 /install*
 vulkansdk*.exe
 *.tar.zst
+/.work/
+/backups/
+/dist/
+/Armor_001_Head_A.bin
+/Armor_001_Head_A.gltf
+__pycache__/
+*.py[cod]

@@ -1,0 +1,3013 @@
+{
+  "actors": {
+    "Link": "Link.glb",
+    "Armor_Default_Head": "Armor_Default_Head.glb",
+    "Armor_Default_Upper": "Armor_Default_Upper.glb",
+    "Armor_Default_Lower": "Armor_Default_Lower.glb",
+    "Armor_001_Head": "Armor_001_Head_A.glb",
+    "Armor_001_Head_A": "Armor_001_Head_A.glb",
+    "Armor_001_Head_B": "Armor_001_Head_B.glb",
+    "Armor_001_Upper": "Armor_001_Upper.glb",
+    "Armor_001_Lower": "Armor_001_Lower.glb",
+    "Armor_006_Head": "Armor_006_Head.glb",
+    "Armor_006_Upper": "Armor_006_Upper.glb",
+    "Armor_006_Lower": "Armor_006_Lower.glb",
+    "Armor_009_Head": "Armor_009_Head.glb",
+    "Armor_009_Upper": "Armor_009_Upper.glb",
+    "Armor_009_Lower": "Armor_009_Lower.glb",
+    "Armor_011_Head": "Armor_030_Head.glb",
+    "Armor_011_Upper": "Armor_030_Upper.glb",
+    "Armor_011_Lower": "Armor_030_Lower.glb",
+    "Armor_020_Head": "Armor_020_Head.glb",
+    "Armor_020_Upper": "Armor_020_Upper.glb",
+    "Armor_020_Lower": "Armor_020_Lower.glb",
+    "Armor_095_Head": "Armor_020_Head.glb",
+    "Armor_095_Upper": "Armor_020_Upper.glb",
+    "Armor_095_Lower": "Armor_020_Lower.glb",
+    "Armor_030_Head": "Armor_030_Head.glb",
+    "Armor_030_Upper": "Armor_030_Upper.glb",
+    "Armor_030_Lower": "Armor_030_Lower.glb",
+    "Armor_053_Head": "Armor_053_Head.glb",
+    "Armor_053_Upper": "Armor_053_Upper.glb",
+    "Armor_053_Lower": "Armor_053_Lower.glb",
+    "Armor_179_Head": "Armor_179_Head.glb",
+    "Armor_179_Upper": "Armor_179_Upper.glb",
+    "Armor_179_Lower": "Armor_179_Lower.glb",
+    "Weapon_Lsword_054": {
+      "file": "Weapon_Lsword_054.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.07,
+          -0.1
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Bow_035": {
+      "file": "Weapon_Bow_035.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.005,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Shield_017": {
+      "file": "Weapon_Shield_017.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Bow_001": {
+      "file": "Weapon_Bow_001.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.03
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_002": {
+      "file": "Weapon_Bow_002.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.005,
+          0.04
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_003": {
+      "file": "Weapon_Bow_003.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Bow_004": {
+      "file": "Weapon_Bow_004.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Bow_006": {
+      "file": "Weapon_Bow_006.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.05
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -7.0
+        ]
+      }
+    },
+    "Weapon_Bow_009": {
+      "file": "Weapon_Bow_009.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.06
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Bow_011": {
+      "file": "Weapon_Bow_011.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.05
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_013": {
+      "file": "Weapon_Bow_013.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.04
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_014": {
+      "file": "Weapon_Bow_014.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_015": {
+      "file": "Weapon_Bow_015.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_016": {
+      "file": "Weapon_Bow_016.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.01,
+          0.05
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -52.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_017": {
+      "file": "Weapon_Bow_017.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.05
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -52.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_023": {
+      "file": "Weapon_Bow_023.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.06
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -50.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_026": {
+      "file": "Weapon_Bow_026.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.06
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Bow_027": {
+      "file": "Weapon_Bow_027.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.005,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Bow_028": {
+      "file": "Weapon_Bow_028.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.05
+        ],
+        "rotationDegrees": [
+          -3.0,
+          -52.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_029": {
+      "file": "Weapon_Bow_029.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.01,
+          0.06
+        ],
+        "rotationDegrees": [
+          -6.0,
+          -55.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Bow_030": {
+      "file": "Weapon_Bow_030.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.06
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Bow_032": {
+      "file": "Weapon_Bow_032.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.06
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -8.0
+        ]
+      }
+    },
+    "Weapon_Bow_033": {
+      "file": "Weapon_Bow_033.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -53.0,
+          -10.0
+        ]
+      }
+    },
+    "Weapon_Bow_036": {
+      "file": "Weapon_Bow_036.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -53.0,
+          -10.0
+        ]
+      }
+    },
+    "Weapon_Bow_038": {
+      "file": "Weapon_Bow_038.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.05
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Bow_040": {
+      "file": "Weapon_Bow_040.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          0.0,
+          0.05
+        ],
+        "rotationDegrees": [
+          0.0,
+          -50.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Bow_071": {
+      "file": "Weapon_Bow_074.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.05
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Bow_072": {
+      "file": "Weapon_Bow_072.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          -55.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Lsword_001": {
+      "file": "Weapon_Lsword_001.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.03,
+          -0.09
+        ],
+        "rotationDegrees": [
+          4.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_002": {
+      "file": "Weapon_Lsword_002.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.023,
+          -0.07
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_003": {
+      "file": "Weapon_Lsword_003.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.04,
+          -0.1
+        ],
+        "rotationDegrees": [
+          5.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_004": {
+      "file": "Weapon_Lsword_004.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.04,
+          -0.1
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_005": {
+      "file": "Weapon_Lsword_005.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.04,
+          -0.1
+        ],
+        "rotationDegrees": [
+          0.0,
+          57.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_006": {
+      "file": "Weapon_Lsword_006.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.05,
+          -0.08
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_010": {
+      "file": "Weapon_Lsword_010.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.09,
+          -0.03,
+          -0.05
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_011": {
+      "file": "Weapon_Lsword_011.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.09,
+          -0.025,
+          -0.04
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_012": {
+      "file": "Weapon_Lsword_012.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.1,
+          -0.03,
+          -0.04
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_013": {
+      "file": "Weapon_Lsword_013.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.03,
+          -0.005,
+          0.03
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_014": {
+      "file": "Weapon_Lsword_014.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.03,
+          -0.005,
+          0.03
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_015": {
+      "file": "Weapon_Lsword_015.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.03,
+          -0.005,
+          0.03
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_016": {
+      "file": "Weapon_Lsword_016.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.1,
+          -0.1
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_017": {
+      "file": "Weapon_Lsword_017.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.1,
+          -0.1
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_018": {
+      "file": "Weapon_Lsword_018.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.1,
+          -0.1
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_019": {
+      "file": "Weapon_Lsword_019.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.38,
+          -0.03,
+          -0.2
+        ],
+        "rotationDegrees": [
+          -41.0,
+          -150.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Lsword_020": {
+      "file": "Weapon_Lsword_020.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.08
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_023": {
+      "file": "Weapon_Lsword_023.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.14,
+          -0.09,
+          -0.13
+        ],
+        "rotationDegrees": [
+          6.0,
+          55.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_024": {
+      "file": "Weapon_Lsword_024.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.025,
+          -0.1
+        ],
+        "rotationDegrees": [
+          4.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_027": {
+      "file": "Weapon_Lsword_027.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.15,
+          -0.055,
+          -0.13
+        ],
+        "rotationDegrees": [
+          6.0,
+          56.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_029": {
+      "file": "Weapon_Lsword_029.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.2,
+          -0.02,
+          -0.11
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_030": {
+      "file": "Weapon_Lsword_030.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.027,
+          -0.08
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_031": {
+      "file": "Weapon_Lsword_031.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.08
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_032": {
+      "file": "Weapon_Lsword_032.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.15,
+          -0.04,
+          -0.09
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_033": {
+      "file": "Weapon_Lsword_033.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.035,
+          -0.07
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_034": {
+      "file": "Weapon_Lsword_034.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.045,
+          -0.08
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_035": {
+      "file": "Weapon_Lsword_035.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.03,
+          -0.08
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_036": {
+      "file": "Weapon_Lsword_036.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.11,
+          -0.1
+        ],
+        "rotationDegrees": [
+          6.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_037": {
+      "file": "Weapon_Lsword_037.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.08,
+          -0.1
+        ],
+        "rotationDegrees": [
+          4.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_038": {
+      "file": "Weapon_Lsword_038.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.025,
+          -0.08
+        ],
+        "rotationDegrees": [
+          4.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_041": {
+      "file": "Weapon_Lsword_041.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.02,
+          -0.1
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_045": {
+      "file": "Weapon_Lsword_045.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.025,
+          -0.08
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_047": {
+      "file": "Weapon_Lsword_047.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.025,
+          -0.1
+        ],
+        "rotationDegrees": [
+          4.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_051": {
+      "file": "Weapon_Lsword_051.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.15,
+          0.0,
+          -0.06
+        ],
+        "rotationDegrees": [
+          0.0,
+          -50.0,
+          2.0
+        ]
+      }
+    },
+    "Weapon_Lsword_055": {
+      "file": "Weapon_Lsword_055.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.03,
+          -0.08
+        ],
+        "rotationDegrees": [
+          2.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_056": {
+      "file": "Weapon_Lsword_056.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.15,
+          0.005,
+          -0.08
+        ],
+        "rotationDegrees": [
+          178.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Lsword_057": {
+      "file": "Weapon_Lsword_057.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.23,
+          -0.03,
+          -0.13
+        ],
+        "rotationDegrees": [
+          0.0,
+          60.0,
+          178.0
+        ]
+      }
+    },
+    "Weapon_Lsword_059": {
+      "file": "Weapon_Lsword_097.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.18,
+          -0.04,
+          -0.1
+        ],
+        "rotationDegrees": [
+          0.0,
+          62.0,
+          178.0
+        ]
+      }
+    },
+    "Weapon_Lsword_060": {
+      "file": "Weapon_Lsword_060.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.035,
+          -0.1
+        ],
+        "rotationDegrees": [
+          3.0,
+          60.0,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Lsword_074": {
+      "file": "Weapon_Lsword_074.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.25,
+          -0.03,
+          -0.12
+        ],
+        "rotationDegrees": [
+          1.0,
+          60.900002,
+          180.0
+        ]
+      }
+    },
+    "Weapon_Shield_001": {
+      "file": "Weapon_Shield_001.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_002": {
+      "file": "Weapon_Shield_002.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_003": {
+      "file": "Weapon_Shield_003.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.03,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_004": {
+      "file": "Weapon_Shield_004.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.15,
+          0.01,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_005": {
+      "file": "Weapon_Shield_005.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.15,
+          0.01,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_006": {
+      "file": "Weapon_Shield_006.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.15,
+          0.01,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_007": {
+      "file": "Weapon_Shield_007.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.17,
+          -0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_008": {
+      "file": "Weapon_Shield_008.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.17,
+          -0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_009": {
+      "file": "Weapon_Shield_009.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.17,
+          -0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_013": {
+      "file": "Weapon_Shield_013.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          0.0,
+          0.05,
+          0.19
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Shield_014": {
+      "file": "Weapon_Shield_014.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          0.0,
+          0.05,
+          0.19
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_015": {
+      "file": "Weapon_Shield_015.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          0.0,
+          0.05,
+          0.19
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_016": {
+      "file": "Weapon_Shield_016.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_018": {
+      "file": "Weapon_Shield_018.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.1,
+          -0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_021": {
+      "file": "Weapon_Shield_021.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.02,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_022": {
+      "file": "Weapon_Shield_022.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.04,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_023": {
+      "file": "Weapon_Shield_023.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.0,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_025": {
+      "file": "Weapon_Shield_025.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.0,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_026": {
+      "file": "Weapon_Shield_026.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.16,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_030": {
+      "file": "Weapon_Shield_030.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.09,
+          0.01,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_031": {
+      "file": "Weapon_Shield_031.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_032": {
+      "file": "Weapon_Shield_032.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_033": {
+      "file": "Weapon_Shield_033.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.04,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_034": {
+      "file": "Weapon_Shield_034.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_035": {
+      "file": "Weapon_Shield_035.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_036": {
+      "file": "Weapon_Shield_036.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.11,
+          0.01,
+          0.22
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_037": {
+      "file": "Weapon_Shield_037.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.01,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_038": {
+      "file": "Weapon_Shield_038.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.09,
+          0.01,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_040": {
+      "file": "Weapon_Shield_040.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.13,
+          0.03,
+          0.2
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_041": {
+      "file": "Weapon_Shield_041.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.05,
+          0.005,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_042": {
+      "file": "Weapon_Shield_042.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.12,
+          -0.025,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Shield_057": {
+      "file": "Weapon_Shield_057.glb",
+      "attachment": {
+        "bone": "Armature_Pod_A",
+        "translation": [
+          -0.09,
+          0.0,
+          0.21
+        ],
+        "rotationDegrees": [
+          0.0,
+          120.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Spear_001": {
+      "file": "Weapon_Spear_001.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_002": {
+      "file": "Weapon_Spear_002.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_003": {
+      "file": "Weapon_Spear_003.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_004": {
+      "file": "Weapon_Spear_004.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_005": {
+      "file": "Weapon_Spear_005.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_006": {
+      "file": "Weapon_Spear_006.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_007": {
+      "file": "Weapon_Spear_007.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_008": {
+      "file": "Weapon_Spear_008.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_009": {
+      "file": "Weapon_Spear_009.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_010": {
+      "file": "Weapon_Spear_010.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_011": {
+      "file": "Weapon_Spear_011.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_012": {
+      "file": "Weapon_Spear_012.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_013": {
+      "file": "Weapon_Spear_013.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.42,
+          -0.025,
+          -0.18
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_014": {
+      "file": "Weapon_Spear_014.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.42,
+          -0.025,
+          -0.18
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_015": {
+      "file": "Weapon_Spear_015.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.42,
+          -0.025,
+          -0.18
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_016": {
+      "file": "Weapon_Spear_016.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_017": {
+      "file": "Weapon_Spear_017.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_018": {
+      "file": "Weapon_Spear_018.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_021": {
+      "file": "Weapon_Spear_021.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_022": {
+      "file": "Weapon_Spear_022.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_023": {
+      "file": "Weapon_Spear_023.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.97,
+          0.01,
+          -0.54
+        ],
+        "rotationDegrees": [
+          -55.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_024": {
+      "file": "Weapon_Spear_024.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_025": {
+      "file": "Weapon_Spear_025.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.015,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_027": {
+      "file": "Weapon_Spear_027.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          0.03,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          1.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_028": {
+      "file": "Weapon_Spear_028.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          0.03,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          1.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_029": {
+      "file": "Weapon_Spear_029.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_030": {
+      "file": "Weapon_Spear_030.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_031": {
+      "file": "Weapon_Spear_031.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_032": {
+      "file": "Weapon_Spear_032.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_033": {
+      "file": "Weapon_Spear_033.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_034": {
+      "file": "Weapon_Spear_034.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_035": {
+      "file": "Weapon_Spear_035.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_036": {
+      "file": "Weapon_Spear_036.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_037": {
+      "file": "Weapon_Spear_037.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_038": {
+      "file": "Weapon_Spear_038.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_047": {
+      "file": "Weapon_Spear_047.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          -0.025,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          0.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_049": {
+      "file": "Weapon_Spear_050.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          0.03,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          1.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Spear_050": {
+      "file": "Weapon_Spear_050.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          -0.87,
+          0.03,
+          -0.38
+        ],
+        "rotationDegrees": [
+          -60.0,
+          1.0,
+          -90.0
+        ]
+      }
+    },
+    "Weapon_Sword_001": {
+      "file": "Weapon_Sword_001.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.001,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_002": {
+      "file": "Weapon_Sword_002.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.01,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_003": {
+      "file": "Weapon_Sword_003.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -2.0
+        ]
+      }
+    },
+    "Weapon_Sword_004": {
+      "file": "Weapon_Sword_004.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_005": {
+      "file": "Weapon_Sword_005.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_006": {
+      "file": "Weapon_Sword_006.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_007": {
+      "file": "Weapon_Sword_007.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.12,
+          -0.015,
+          -0.07
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          2.0
+        ]
+      }
+    },
+    "Weapon_Sword_008": {
+      "file": "Weapon_Sword_008.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.12,
+          -0.015,
+          -0.07
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          2.0
+        ]
+      }
+    },
+    "Weapon_Sword_009": {
+      "file": "Weapon_Sword_009.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.12,
+          -0.015,
+          -0.07
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          2.0
+        ]
+      }
+    },
+    "Weapon_Sword_013": {
+      "file": "Weapon_Sword_013.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.0,
+          -0.01,
+          0.0
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_014": {
+      "file": "Weapon_Sword_014.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.0,
+          -0.01,
+          0.0
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_015": {
+      "file": "Weapon_Sword_015.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.0,
+          -0.01,
+          0.0
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_016": {
+      "file": "Weapon_Sword_016.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.15,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_017": {
+      "file": "Weapon_Sword_017.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.14,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_018": {
+      "file": "Weapon_Sword_018.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.13,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_019": {
+      "file": "Weapon_Sword_019.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.241,
+          -0.05,
+          -0.12
+        ],
+        "rotationDegrees": [
+          56.0,
+          -25.0,
+          175.0
+        ]
+      }
+    },
+    "Weapon_Sword_020": {
+      "file": "Weapon_Sword_020.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.22,
+          -0.03,
+          -0.15
+        ],
+        "rotationDegrees": [
+          -96.0,
+          -32.0,
+          -178.0
+        ]
+      }
+    },
+    "Weapon_Sword_021": {
+      "file": "Weapon_Sword_021.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.14,
+          -0.015,
+          -0.09
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_022": {
+      "file": "Weapon_Sword_022.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.001,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_023": {
+      "file": "Weapon_Sword_023.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.04,
+          -0.12
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_024": {
+      "file": "Weapon_Sword_024.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_025": {
+      "file": "Weapon_Sword_025.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Sword_027": {
+      "file": "Weapon_Sword_027.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Sword_029": {
+      "file": "Weapon_Sword_029.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          125.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_030": {
+      "file": "Weapon_Sword_030.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_031": {
+      "file": "Weapon_Sword_031.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_033": {
+      "file": "Weapon_Sword_033.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Sword_034": {
+      "file": "Weapon_Sword_034.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Sword_035": {
+      "file": "Weapon_Sword_035.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Sword_040": {
+      "file": "Weapon_Sword_042.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.1,
+          -0.015,
+          -0.06
+        ],
+        "rotationDegrees": [
+          10.0,
+          63.5,
+          -169.0
+        ]
+      }
+    },
+    "Weapon_Sword_041": {
+      "file": "Weapon_Sword_041.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.18,
+          0.0,
+          -0.11
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_043": {
+      "file": "Weapon_Sword_043.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_044": {
+      "file": "Weapon_Sword_044.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          0.0,
+          -0.09
+        ],
+        "rotationDegrees": [
+          116.5,
+          -149.699997,
+          -104.0
+        ]
+      }
+    },
+    "Weapon_Sword_047": {
+      "file": "Weapon_Sword_047.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_048": {
+      "file": "Weapon_Sword_048.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_049": {
+      "file": "Weapon_Sword_049.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_050": {
+      "file": "Weapon_Sword_050.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_051": {
+      "file": "Weapon_Sword_051.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.15,
+          -0.02,
+          -0.04
+        ],
+        "rotationDegrees": [
+          180.0,
+          125.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_052": {
+      "file": "Weapon_Sword_052.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_053": {
+      "file": "Weapon_Sword_053.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.04,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -4.0
+        ]
+      }
+    },
+    "Weapon_Sword_057": {
+      "file": "Weapon_Sword_057.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.001,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_058": {
+      "file": "Weapon_Sword_058.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.001,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          0.0
+        ]
+      }
+    },
+    "Weapon_Sword_059": {
+      "file": "Weapon_Sword_059.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.12,
+          -0.01,
+          -0.02
+        ],
+        "rotationDegrees": [
+          180.0,
+          100.0,
+          -5.0
+        ]
+      }
+    },
+    "Weapon_Sword_060": {
+      "file": "Weapon_Sword_060.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.03,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_061": {
+      "file": "Weapon_Sword_061.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.03,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_062": {
+      "file": "Weapon_Sword_062.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.16,
+          -0.015,
+          -0.1
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -3.0
+        ]
+      }
+    },
+    "Weapon_Sword_070": {
+      "file": "Weapon_Sword_070.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.2,
+          -0.005,
+          -0.12
+        ],
+        "rotationDegrees": [
+          180.0,
+          120.0,
+          -2.0
+        ]
+      }
+    },
+    "Weapon_Sword_073": {
+      "file": "Weapon_Sword_073.glb",
+      "attachment": {
+        "bone": "Armature_Weapon_R",
+        "translation": [
+          0.125,
+          -0.05,
+          -0.075
+        ],
+        "rotationDegrees": [
+          -14.5,
+          -61.0,
+          8.5
+        ]
+      }
+    }
+  }
+}

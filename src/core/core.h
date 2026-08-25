@@ -13,6 +13,7 @@
 #include <mutex>
 #include <span>
 #include <string>
+#include <utility>
 #include <vector>
 
 #include "common/common_types.h"
@@ -383,7 +384,17 @@ public:
     bool GetExitRequested() const;
 
     void SetApplicationProcessBuildID(const CurrentBuildProcessID& id);
-    [[nodiscard]] const CurrentBuildProcessID& GetApplicationProcessBuildID() const;
+    [[nodiscard]] CurrentBuildProcessID GetApplicationProcessBuildID() const;
+
+
+
+    void SetApplicationProcessMainModule(u64 base, u64 size);
+    [[nodiscard]] std::pair<u64, u64> GetApplicationProcessMainModule() const;
+
+
+
+    void SetApplicationProcessCompanionMailbox(u64 address);
+    [[nodiscard]] u64 GetApplicationProcessCompanionMailbox() const;
 
     /// Register a host thread as an emulated CPU Core.
     void RegisterCoreThread(std::size_t id);

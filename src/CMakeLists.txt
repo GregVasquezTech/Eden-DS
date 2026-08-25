@@ -38,6 +38,11 @@ if (GENSHIN_SPOOF)
     add_compile_definitions(GENSHIN_SPOOF)
 endif()
 
+
+if (BOTW_DUALSCREEN_COMPANION)
+    add_compile_definitions(BOTW_DUALSCREEN_COMPANION)
+endif()
+
 # Build ID (mingw only right now)
 # Pretty much just refers to the CI "target" for this build
 if (NOT BUILD_ID)
