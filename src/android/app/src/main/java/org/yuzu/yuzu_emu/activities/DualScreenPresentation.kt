@@ -62,6 +62,8 @@ private class DualScreenCompanionHost(context: android.content.Context) : FrameL
     private companion object {
         private const val BOTW_TITLE_ID = 0x01007EF00011E000L
         private const val MK8D_TITLE_ID = 0x0100152000022000L
+        private const val PKMN_BD_TITLE_ID = 0x0100000011D90000L
+        private const val PKMN_SP_TITLE_ID = 0x010018E011D92000L
         private const val ROUTE_INTERVAL_MS = 500L
     }
 
@@ -107,6 +109,8 @@ private class DualScreenCompanionHost(context: android.content.Context) : FrameL
                 WaitingForGameView(context)
             }
             MK8D_TITLE_ID -> Mk8dCompanionView(context)
+            PKMN_BD_TITLE_ID -> BdspCompanionView(context)
+            PKMN_SP_TITLE_ID -> BdspCompanionView(context)
             else -> WaitingForGameView(context)
         }
         addView(content, LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT))

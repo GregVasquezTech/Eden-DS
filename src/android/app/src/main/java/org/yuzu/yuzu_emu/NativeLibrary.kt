@@ -172,9 +172,11 @@ object NativeLibrary {
 
     external fun performBotwCompanionAction(action: Int, argument: Long): Boolean
 
+    external fun getBdspCompanionSnapshot(): String
+
+    external fun performBdspCompanionAction(action: Int, argument: Long): Boolean
 
     external fun fillMk8dCompanionSnapshot(output: ByteBuffer): Int
-
 
     external fun activateMk8dItemSlot(slot: Int): Boolean
 
